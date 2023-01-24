@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Web stoarge - Localstorage | session storage</h2>
+
+    <p> Enter tour mobile number. </p>
+    <input type="text" id="mobile">
+    <button> Add data </button>
+    <p id="local"></p>
+    <a href="./13C-Newpage.html">New Page</a>
+
+
+    <script>
+        var btn = document.querySelector('button')
+
+        btn.onclick = ()=>{
+        var mobile = document.getElementById("mobile").value;
+        // Store data in lpcal storage
+                                    // Key     // value
+        window.localStorage.setItem("mymobile", mobile);
+
+        }
+
+         // Recieve data from local storage
+       let mydata = window.localStorage.getItem("mymobile");
+       document.getElementById('local').innerHTML = mydata;
+          
+    </script>
+</body>
+</html>

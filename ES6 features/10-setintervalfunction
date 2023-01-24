@@ -1,0 +1,22 @@
+console.log("Statement-1")
+console.log("Statement-2")
+
+var time = setInterval(() => {
+    console.log("Hello friends")
+
+},3000);
+
+console.log("Statement-3")
+console.log("Statement-4")
+console.log("Statement-5")
+
+clearInterval(time);   // for stoping the set interval
+
+// Asynchronous function :  Contain call back function which execute in the background
+// 1. setInterval(() => {
+    
+// }, interval);
+
+// 2. setTimeout(() => {
+    
+// }, timeout);
